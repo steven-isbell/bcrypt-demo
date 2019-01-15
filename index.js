@@ -15,7 +15,7 @@ const isNotPassword = bcrypt.compareSync('sum1337p@ss', hash);
 // Async
 bcrypt.genSalt(10).then((err, salt) => {
   bcrypt.hash(myPass, salt).then((err, hash) => {
-    console.log('Stored To DB');
+    // Store password to db
   });
 });
 
